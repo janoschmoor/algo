@@ -1,7 +1,8 @@
 package algo.sort;
 
-public class BubbleSort {
+public class BubbleSort extends SortAlg {
     
+    @Override
     public int[] sort (int[] A) {
 
         // loop

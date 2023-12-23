@@ -3,6 +3,8 @@ package algo;
 import java.util.Arrays;
 
 import algo.sort.BubbleSort;
+import algo.sort.MergeSort;
+import algo.sort.SortAlg;
 
 public class App 
 {
@@ -10,9 +12,9 @@ public class App
 
         int[] nums = new int[]{0,5,7,6,1,8,9,4,3,2};
 
-        BubbleSort bs = new BubbleSort();
+        SortAlg alg = new MergeSort();
 
-        System.out.println(Arrays.toString(bs.sort(nums)));
+        System.out.println(Arrays.toString(alg.sort(nums)));
 
     }
 }
