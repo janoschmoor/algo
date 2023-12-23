@@ -1,5 +1,9 @@
 package algo.sort;
 
+//
+//  Classic Divide and Conquer
+//
+
 public class MergeSort extends SortAlg {
 
     @Override

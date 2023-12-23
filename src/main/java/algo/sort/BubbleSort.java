@@ -1,5 +1,10 @@
 package algo.sort;
 
+// 
+// Sort an array by swaping pairs n^2 many times
+//
+
+
 public class BubbleSort extends SortAlg {
     
     @Override
