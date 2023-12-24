@@ -20,9 +20,9 @@ public class App
 
         SearchAlg alg = new BinarySearch();
 
-        for (int i = 0; i < 20; i++) {
+        for (int i = -5; i < 15; i++) {
 
-            System.out.println(alg.search(nums, i) + " " + alg.search(sortednums, i));
+            System.out.println(alg.search(sortednums, i));
         }
         
 
