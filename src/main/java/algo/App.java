@@ -2,6 +2,7 @@ package algo;
 
 import java.util.Arrays;
 
+import algo.graph.UnionFind;
 import algo.search.BinarySearch;
 import algo.search.SearchAlg;
 import algo.sort.BubbleSort;
@@ -12,17 +13,15 @@ public class App
 {
     public static void main( String[] args ) {
 
-        int[] nums = new int[]{0,5,7,6,1,8,9,4,3,2};
+        UnionFind uf = new UnionFind(10);
 
-        SortAlg sort = new MergeSort();
+        uf.union(5, 6);
+        uf.union(1, 2);
+        uf.union(6, 7);
 
-        int[] sortednums = sort.sort(nums);
+        for (int i = 1; i < 10; i++) {
 
-        SearchAlg alg = new BinarySearch();
-
-        for (int i = -5; i < 15; i++) {
-
-            System.out.println(alg.search(sortednums, i));
+            System.out.println(i-1+" to "+i+" :"+uf.connected(i-1, i));
         }
         
 
