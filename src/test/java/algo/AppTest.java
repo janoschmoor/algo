@@ -7,6 +7,8 @@ import org.junit.Test;
 
 import algo.search.BinarySearch;
 import algo.sort.BubbleSort;
+import algo.sort.InsertionSort;
+import algo.sort.SelectionSort;
 import algo.sort.MergeSort;
 
 
@@ -16,7 +18,18 @@ import algo.sort.MergeSort;
 public class AppTest {
 
 
-    
+    @Test
+    public void InsertionSort() {
+        for (int i = 0; i < 100; i++) {
+            assertTrue(isSorted(new InsertionSort().sort(getRandomIntArray())));
+        }
+    }
+    @Test
+    public void SelectionSort() {
+        for (int i = 0; i < 100; i++) {
+            assertTrue(isSorted(new SelectionSort().sort(getRandomIntArray())));
+        }
+    }
     @Test
     public void BubbleSort() {
         for (int i = 0; i < 100; i++) {
